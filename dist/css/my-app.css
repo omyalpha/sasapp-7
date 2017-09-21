@@ -1,0 +1,35 @@
+.smallfont {
+  font-size: 14px !important;
+  color: #80c1ff;
+}
+.timefont {
+  font-size: 14px !important;
+  color: #80c1ff !important;
+}
+
+.popover {
+  width: 90%;
+}
+
+.whitefont {
+  color: #ffffff;
+}
+
+.pull-right {
+  text-align: right !important;
+}
+
+.orange{ background: #ff9800; border:1px solid #ff9800 !important; color:#ffffff;}
+.red{ background: #f44336; border:1px solid #f44336 !important; color:#ffffff;}
+.blue{ background: #2196f3; border:1px solid #2196f3 !important; color:#ffffff;}
+.green{ background:#4caf50; border:1px solid #4caf50 !important; color:#ffffff;}
+.fixedheight {  height: 180px; }
+
+.rotate-90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+  
