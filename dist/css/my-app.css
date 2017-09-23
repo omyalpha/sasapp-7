@@ -23,7 +23,7 @@
 .red{ background: #f44336; border:1px solid #f44336 !important; color:#ffffff;}
 .blue{ background: #2196f3; border:1px solid #2196f3 !important; color:#ffffff;}
 .green{ background:#4caf50; border:1px solid #4caf50 !important; color:#ffffff;}
-.fixedheight {  height: 180px; }
+.fixedheight {  height: 150px; }
 
 .rotate-90 {
     -webkit-transform: rotate(90deg);
@@ -31,5 +31,7 @@
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
+	left: -25px;
+	top: 25px;
 }
   
