@@ -63,57 +63,14 @@ $$(document).on("pageInit", function(e) {
 								htmlText1 += '</div>';
 								htmlText1 += '<p><h4><img src="img/airlines/' + data[i].logoname + '" width="100" alt="' + data[i].logoalt + '">' + data[i].airline + ' ' + data[i].flight + '</h4></p>';
 								//htmlText1 += '<p><i class="color-blue">from:</i> ' + data[i].dAirportName + ' (' + data[i].dAirportCode + ')<br><i class="color-blue">to:</i> ' + data[i].aAirportName + ' (' + data[i].aAirportCode + ')<br><i class="color-blue">departure:</i> ' + data[i].dDate + ' ' + data[i].dTime + '<br><i class="color-blue">actual:</i> ' + data[i].dDateActual + ' ' + data[i].dTimeActual + '<br><i class="color-blue">arrival:</i> ' + data[i].aDate + ' ' + data[i].aTime + '<br><i class="color-blue">actual:</i> ' + data[i].aDateActual + ' ' + data[i].aTimeActual + '<br><i class="color-blue">duration:</i> ' + data[i].flightDuration + ' minutes<br><i class="color-blue">departure terminal:</i> ' + data[i].dTerminal + '<br><i class="color-blue">plane:</i> ' + data[i].plane + '<br><i class="color-blue">widebody:</i> ' + data[i].widebody + '<br><i class="color-blue">tail number:</i> ' + data[i].tailNumber + '<br><span class="badge bg-' + data[i].statuscolor + '">' + data[i].statusname + '</span></p>';
-								htmlText1 += '<div class="list-block accordion-list inset">';
-								htmlText1 += '<ul>';
-								htmlText1 += '<li class="accordion-item accordion-item-expanded"><a href="#" class="item-link item-content">';
-								htmlText1 += '<div class="item-inner">';
-								htmlText1 += '<div class="item-title smallfont">More Information</div>';
-								htmlText1 += '</div></a>';
-								htmlText1 += '<div class="accordion-item-content">';
-								htmlText1 += '<div class="list-block">';
-								htmlText1 += '<ul>';
-								htmlText1 += '<li>';
-								htmlText1 += '<div class="item-content">';
-								htmlText1 += '<div class="item-inner"> ';
-								htmlText1 += '<div class="item-title smallfont"><i class="color-blue">Duration:</i> ' + data[i].flightDuration + ' minutes </div>';
-								htmlText1 += '</div>';
-								htmlText1 += '</div>';
-								htmlText1 += '</li>';
-								htmlText1 += '<li>';
-								htmlText1 += '<div class="item-content">';
-								htmlText1 += '<div class="item-inner">';
-								htmlText1 += '<div class="item-title smallfont"><i class="color-blue">Departure Terminal:</i> ' + data[i].dTerminal + '</div>';
-								htmlText1 += '</div>';
-								htmlText1 += '</div>';
-								htmlText1 += '</li>';
-								htmlText1 += '<li>';
-								htmlText1 += '<div class="item-content">';
-								htmlText1 += '<div class="item-inner">';
-								htmlText1 += '<div class="item-title smallfont"><i class="color-blue">Plane:</i> ' + data[i].plane + '</div>';
-								htmlText1 += '</div>';
-								htmlText1 += '</div>';
-								htmlText1 += '</li>';
-								htmlText1 += '<li>';
-								htmlText1 += '<div class="item-content">';
-								htmlText1 += '<div class="item-inner">';
-								htmlText1 += '<div class="item-title smallfont"><i class="color-blue">Wide Body:</i> ' + data[i].widebody + '</div>';
-								htmlText1 += '</div>';
-								htmlText1 += '</div>';
-								htmlText1 += '</li>';
-								htmlText1 += '<li>';
-								htmlText1 += '<div class="item-content">';
-								htmlText1 += '<div class="item-inner">';
-								htmlText1 += '<div class="item-title smallfont"><span class="badge bg-' + data[i].statuscolor + '">' + data[i].statusname + '</span></div>';
-								htmlText1 += '</div>';
-								htmlText1 += '</div>';
-								htmlText1 += '</li>';
-								htmlText1 += '</ul>';
-								htmlText1 += '</div>';
-								htmlText1 += '</div>';
-								htmlText1 += '</li>';
-								htmlText1 += '</ul>';
-								htmlText1 += '</div>';
-								htmlText1 += '<div onclick="window.plugins.socialsharing.share(\'Flight Information' + data[i].airline + ' ' + data[i].flight + '\', null, null, \'' + data[i].dDate + '<br>' + data[i].dTime + '\')">';
+								htmlText1 += '<div class="list-block"><ul>';
+								htmlText1 += '<li><div class="item-inner"><div class="item-title smallfont"><i class="color-blue">Duration:</i> ' + data[i].flightDuration + ' minutes </div></div></li>';
+								htmlText1 += '<li><div class="item-inner"><div class="item-title smallfont"><i class="color-blue">Departure Terminal:</i> ' + data[i].dTerminal + '</div></div></li>';
+								htmlText1 += '<li><div class="item-inner"><div class="item-title smallfont"><i class="color-blue">Plane:</i> ' + data[i].plane + '</div></div></li>';
+								htmlText1 += '<li><div class="item-inner"><div class="item-title smallfont"><i class="color-blue">Wide Body:</i> ' + data[i].widebody + '</div></div></li>';
+								htmlText1 += '<li><div class="item-inner"><div class="item-title smallfont"><span class="badge bg-' + data[i].statuscolor + '">' + data[i].statusname + '</div></div></li>';
+								htmlText1 += '</ul></div>';
+								htmlText1 += '<div onclick="window.plugins.socialsharing.share(\'Flight Information' + data[i].airline + ' ' + data[i].flight + '\', null, null, \'' + data[i].dDate + ' ' + data[i].dTime + '. Arrival: ' + data[i].aDate + '<br>' + data[i].aTime + '\')">';
 								htmlText1 += '<i class="icon material-icons">share</i>';
 								htmlText1 += '</div>';
 								htmlText1 += '</div>';
@@ -194,57 +151,14 @@ $$(document).on("pageInit", function(e) {
 								htmlText += '</div>';
 								htmlText += '<p><h4><img src="img/airlines/' + data[i].logoname + '" width="100" alt="' + data[i].logoalt + '">' + data[i].airline + ' ' + data[i].flight + '</h4></p>';
 								//htmlText1 += '<p><i class="color-blue">from:</i> ' + data[i].dAirportName + ' (' + data[i].dAirportCode + ')<br><i class="color-blue">to:</i> ' + data[i].aAirportName + ' (' + data[i].aAirportCode + ')<br><i class="color-blue">departure:</i> ' + data[i].dDate + ' ' + data[i].dTime + '<br><i class="color-blue">actual:</i> ' + data[i].dDateActual + ' ' + data[i].dTimeActual + '<br><i class="color-blue">arrival:</i> ' + data[i].aDate + ' ' + data[i].aTime + '<br><i class="color-blue">actual:</i> ' + data[i].aDateActual + ' ' + data[i].aTimeActual + '<br><i class="color-blue">duration:</i> ' + data[i].flightDuration + ' minutes<br><i class="color-blue">departure terminal:</i> ' + data[i].dTerminal + '<br><i class="color-blue">plane:</i> ' + data[i].plane + '<br><i class="color-blue">widebody:</i> ' + data[i].widebody + '<br><i class="color-blue">tail number:</i> ' + data[i].tailNumber + '<br><span class="badge bg-' + data[i].statuscolor + '">' + data[i].statusname + '</span></p>';
-								htmlText += '<div class="list-block accordion-list inset">';
-								htmlText += '<ul>';
-								htmlText += '<li class="accordion-item accordion-item-expanded"><a href="#" class="item-link item-content">';
-								htmlText += '<div class="item-inner">';
-								htmlText += '<div class="item-title smallfont">More Information</div>';
-								htmlText += '</div></a>';
-								htmlText += '<div class="accordion-item-content">';
-								htmlText += '<div class="list-block">';
-								htmlText += '<ul>';
-								htmlText += '<li>';
-								htmlText += '<div class="item-content">';
-								htmlText += '<div class="item-inner"> ';
-								htmlText += '<div class="item-title smallfont"><i class="color-blue">Duration:</i> ' + data[i].flightDuration + ' minutes </div>';
-								htmlText += '</div>';
-								htmlText += '</div>';
-								htmlText += '</li>';
-								htmlText += '<li>';
-								htmlText += '<div class="item-content">';
-								htmlText += '<div class="item-inner">';
-								htmlText += '<div class="item-title smallfont"><i class="color-blue">Departure Terminal:</i> ' + data[i].dTerminal + '</div>';
-								htmlText += '</div>';
-								htmlText += '</div>';
-								htmlText += '</li>';
-								htmlText += '<li>';
-								htmlText += '<div class="item-content">';
-								htmlText += '<div class="item-inner">';
-								htmlText += '<div class="item-title smallfont"><i class="color-blue">Plane:</i> ' + data[i].plane + '</div>';
-								htmlText += '</div>';
-								htmlText += '</div>';
-								htmlText += '</li>';
-								htmlText += '<li>';
-								htmlText += '<div class="item-content">';
-								htmlText += '<div class="item-inner">';
-								htmlText += '<div class="item-title smallfont"><i class="color-blue">Wide Body:</i> ' + data[i].widebody + '</div>';
-								htmlText += '</div>';
-								htmlText += '</div>';
-								htmlText += '</li>';
-								htmlText += '<li>';
-								htmlText += '<div class="item-content">';
-								htmlText += '<div class="item-inner">';
-								htmlText += '<div class="item-title smallfont"><span class="badge bg-' + data[i].statuscolor + '">' + data[i].statusname + '</span></div>';
-								htmlText += '</div>';
-								htmlText += '</div>';
-								htmlText += '</li>';
-								htmlText += '</ul>';
-								htmlText += '</div>';
-								htmlText += '</div>';
-								htmlText += '</li>';
-								htmlText += '</ul>';
-								htmlText += '</div>';
-								htmlText += '<div onclick="window.plugins.socialsharing.share(\'Flight Information' + data[i].airline + ' ' + data[i].flight + '\', null, null, \'' + data[i].dDate + '<br>' + data[i].dTime + '\')">';
+								htmlText += '<div class="list-block"><ul>';
+								htmlText += '<li><div class="item-inner"><div class="item-title smallfont"><i class="color-blue">Duration:</i> ' + data[i].flightDuration + ' minutes </div></div></li>';
+								htmlText += '<li><div class="item-inner"><div class="item-title smallfont"><i class="color-blue">Departure Terminal:</i> ' + data[i].dTerminal + '</div></div></li>';
+								htmlText += '<li><div class="item-inner"><div class="item-title smallfont"><i class="color-blue">Plane:</i> ' + data[i].plane + '</div></div></li>';
+								htmlText += '<li><div class="item-inner"><div class="item-title smallfont"><i class="color-blue">Wide Body:</i> ' + data[i].widebody + '</div></div></li>';
+								htmlText += '<li><div class="item-inner"><div class="item-title smallfont"><span class="badge bg-' + data[i].statuscolor + '">' + data[i].statusname + '</div></div></li>';
+								htmlText += '</ul></div>';
+								htmlText += '<div onclick="window.plugins.socialsharing.share(\'Flight Information' + data[i].airline + ' ' + data[i].flight + '\', null, null, \'Departure: ' + data[i].dDate + ' ' + data[i].dTime + '. Arrival: ' + data[i].aDate + '<br>' + data[i].aTime + '\')">';
 								htmlText += '<i class="icon material-icons">share</i>';
 								htmlText += '</div>';
 								htmlText += '</div>';
@@ -524,6 +438,38 @@ $$(document).on("pageInit", function(e) {
 		});
 	}
 	
+	// rate page
+	if (page.name === 'rate') {
+	console.log('rate page loaded');
+		$(function() {
+			$(".button").click(function() {
+
+				var rating = $("input[name='rating']:checked").val();
+				var dataString = 'rating=' + rating;
+				
+				$.ajax({
+				  beforeSend: function() { myApp.showIndicator(); },
+				  complete: function(){ myApp.hideIndicator(); },
+				  dataType: "jsonp",
+				  jsonpCallback: "jsonCallback",
+				  type: "GET",
+				  url: "http://webhosting.sd/~sasapp/rate.php",
+				  data: dataString,
+				  success: function jsonCallback(data){
+					alert("Thank you for submitting your rating");
+					$.each(data, function(i, field){
+					console.log(data[i]);
+					});
+				  },
+				  error:function(XMLHttpRequest,textStatus,errorThrown){
+					alert("Failed submitting rating");
+				  }
+				});
+				return false;
+			});
+		});
+	}
+	
 	
 	//////////////////////////////// ARABIC
 	
@@ -752,6 +698,74 @@ $$(document).on("pageInit", function(e) {
 					});
 	}
 	/////////// end
+	
+	// contact page
+	if (page.name === 'contactar') {
+	console.log('contact page loaded');
+		$(function() {
+			$(".button").click(function() {
+
+				var name = $("input#name").val();
+				var email = $("input#email").val();
+				var phone = $("input#phone").val();
+				var subject = $("select#subject").val();
+				var message = $("textarea#message").val();
+				var dataString = 'name='+ name + '&email=' + email + '&phone=' + phone + '&subject=' + subject + '&message=' + message;
+				
+				$.ajax({
+				  beforeSend: function() { myApp.showIndicator(); },
+				  complete: function(){ myApp.hideIndicator(); },
+				  dataType: "jsonp",
+				  jsonpCallback: "jsonCallback",
+				  type: "GET",
+				  url: "http://webhosting.sd/~sasapp/contact.php",
+				  data: dataString,
+				  success: function jsonCallback(data){
+					alert("تم إرسال رسالتك بنجاح");
+					$.each(data, function(i, field){
+					console.log(data[i]);
+					});
+				  },
+				  error:function(XMLHttpRequest,textStatus,errorThrown){
+					alert("فشل في إرسال الرسالة");
+				  }
+				});
+				return false;
+			});
+		});
+	}
+	
+	// rate page
+	if (page.name === 'ratear') {
+	console.log('rate page loaded');
+		$(function() {
+			$(".button").click(function() {
+
+				var rating = $("input[name='rating']:checked").val();
+				var dataString = 'rating=' + rating;
+				
+				$.ajax({
+				  beforeSend: function() { myApp.showIndicator(); },
+				  complete: function(){ myApp.hideIndicator(); },
+				  dataType: "jsonp",
+				  jsonpCallback: "jsonCallback",
+				  type: "GET",
+				  url: "http://webhosting.sd/~sasapp/rate.php",
+				  data: dataString,
+				  success: function jsonCallback(data){
+					alert("تم إرسال تقييمك بنجاح");
+					$.each(data, function(i, field){
+					console.log(data[i]);
+					});
+				  },
+				  error:function(XMLHttpRequest,textStatus,errorThrown){
+					alert("فشل في إرسال التقييم");
+				  }
+				});
+				return false;
+			});
+		});
+	}
 	
 	
 
